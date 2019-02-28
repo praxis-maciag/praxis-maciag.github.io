@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HNO Praxis Maciag in Bergkamen">
+    <meta name="author" content="HNO Praxis Maciag in Bergkamen">
+	<meta name="keywords" content="hno, bergkamen, praxis, maciag, hals, nasen, ohren, arzt" />
+	<meta name="robots" content="all" />
+
+    <title>HNO Praxis Maciag in Bergkamen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-3.2.0.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+	
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=de"></script>
+	<script>
+	var map;
+	var marker;
+	
+	function initialize() {
+		var mapOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.61353, 7.62962),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById('map-canvas'),
+			mapOptions);
+		  
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng(51.61353, 7.62962), 
+			map: map,
+			title: 'HNO Praxis Maciag'
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	
+    </script>
+
+	
+  </head>
+
+  <body>
+      <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">HNO Praxis Maciag</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="anfahrt.html">Anfahrt</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+	
+	<div class="container">
+  
+  <div class="row">
+  <div class="col-md-12">
+	<h2>Anfahrt</h2>
+	<p class="lead">HNO Praxis Maciag<br />Louise-Schröder-Strasse. 20<br />59192 Bergkamen</p>
+  </div>
+  </div>
+  
+  <div class="row">
+  <div class="col-md-12">
+	<p>Ausreichend Parkplätze in unmittelbarer nähe vorhanden.</p>
+	<div id="map-canvas" style="height: 450px"></div>
+  </div>
+  </div>
+
+
+
+
+  <div class="footer">
+    <p>&copy; HNO Praxis Maciag 2019 - <a href="impressum.html">Impressum</a> - <a href="datenschutzerklaerung.html">Datenschutzerklärung</a></p>
+    </div>
+  
+  </div> <!-- /container -->
+  
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min-3.2.0.js"></script>
+      <!-- Placed at the end of the document so the pages load faster -->
+    </body>
+  </html>
